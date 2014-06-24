@@ -12,14 +12,68 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
     var window: UIWindow?
-
+    var myProperty: String?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         // Override point for customization after application launch.
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
+        
+        myProperty = "Foo";
+        println(myProperty);
+        
+        var vc : ViewController = ViewController(nibName:nil, bundle:nil);
+        self.window!.rootViewController = vc;
+        
+        var array : NSMutableArray = ["one", "two"];
+        array.addObject("three");
+        var dic : NSDictionary = ["dog": 2, "cat": 8];
+        
+        println("array = \(array)");
+        println("dic = \(dic)");
+        
+        // var 変更可能な変数
+        // let 変更不可能な変数
+        
+        var str = "okubo";
+        //switch (str) {
+        switch str {
+        case "o":
+            println("o");
+        case "okubo":
+            println("yes, I am");
+        case "yamada":
+            println("no");
+        default:
+            break;
+        }
+        
+        println(self.doit());
+        
+        let apples = 3
+        let oranges = 5
+        let appleSummary = "I have \(apples) apples."
+        let fruitSummary = "I have \(apples + oranges) pieces of fruit."
+        
+        println(appleSummary);
+        println(fruitSummary);
+        
+        println("string " + String(apples));
+        
+        var occupations = [
+            "Malcolm": "Captain",
+            "Kaylee": "Mechanic",
+        ]
+        println("occupations= \(occupations)");
+        occupations["Jayne"] = "Public Relations"
+        println("occupations= \(occupations)");
+        
         return true
+    }
+    
+    func doit() -> Int {
+        return 8;
     }
 
     func applicationWillResignActive(application: UIApplication) {

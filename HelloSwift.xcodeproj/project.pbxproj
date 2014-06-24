@@ -10,6 +10,8 @@
 		D913A38E19592C78008C5DC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913A38D19592C78008C5DC5 /* AppDelegate.swift */; };
 		D913A39019592C78008C5DC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D913A38F19592C78008C5DC5 /* Images.xcassets */; };
 		D913A39C19592C79008C5DC5 /* HelloSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913A39B19592C79008C5DC5 /* HelloSwiftTests.swift */; };
+		D913A3A719592D0B008C5DC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913A3A519592D0B008C5DC5 /* ViewController.swift */; };
+		D913A3A819592D0B008C5DC5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D913A3A619592D0B008C5DC5 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,8 @@
 		D913A39519592C79008C5DC5 /* HelloSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D913A39A19592C79008C5DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D913A39B19592C79008C5DC5 /* HelloSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSwiftTests.swift; sourceTree = "<group>"; };
+		D913A3A519592D0B008C5DC5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D913A3A619592D0B008C5DC5 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				D913A38D19592C78008C5DC5 /* AppDelegate.swift */,
+				D913A3A519592D0B008C5DC5 /* ViewController.swift */,
+				D913A3A619592D0B008C5DC5 /* ViewController.xib */,
 				D913A38F19592C78008C5DC5 /* Images.xcassets */,
 				D913A38B19592C78008C5DC5 /* Supporting Files */,
 			);
@@ -182,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D913A3A819592D0B008C5DC5 /* ViewController.xib in Resources */,
 				D913A39019592C78008C5DC5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D913A3A719592D0B008C5DC5 /* ViewController.swift in Sources */,
 				D913A38E19592C78008C5DC5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
